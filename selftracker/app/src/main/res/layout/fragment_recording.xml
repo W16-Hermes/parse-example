@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uw.bn22.self_tracker.recording">
+
+    <TextView
+        android:id="@+id/txtSummaryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Entry"
+        android:textSize="24dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Location"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Name"
+        android:textSize="18dp"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/addName"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/addName" />
+
+    <EditText
+        android:id="@+id/addName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:maxLines="2"
+        android:layout_below="@+id/txtSummaryTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/addLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:maxLines="2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignTop="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating (1 - 10)"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/addLocation"
+        android:layout_toStartOf="@+id/addLocation" />
+
+    <EditText
+        android:id="@+id/addRating"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:maxLines="1"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+</RelativeLayout>
